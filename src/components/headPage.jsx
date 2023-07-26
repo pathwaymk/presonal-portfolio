@@ -17,7 +17,12 @@ export default ({setLight, isLight}) => {
     return(
         <main style={style} id="home">
 
-            <div className={isLight ? "toggle" : "toggle active"} onClick={toggle}>{isLight ? "Light mode" : "Dark mode"}</div>
+            <div className={isLight ? "toggle" : "toggle active"} onClick={toggle}>
+                <div className={isLight ? "before" : "before active"}>
+
+                </div>
+                {isLight ? "Light mode" : "Dark mode"}
+            </div>
             {isLight && <h1 className="hello">HELLO...</h1>}
             <div className="nameNcv">
                 <h1>I'm manoj</h1>

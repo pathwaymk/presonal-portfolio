@@ -38,14 +38,12 @@ main h1{
     color: whitesmoke;
 }
 
-.toggle::before{
-    content: "";
+.before{
     position: absolute;
-    /* background-color: antiquewhite; */
     width: 1.9rem;
     height: 1.9rem;
     border-radius: 50%;
-    background-image: url(../assets/toggleicon.png);
+    background-image: url(../assets/toggle.png);
     background-size: cover;
     background-repeat: no-repeat;
     left: 0%;
@@ -54,7 +52,7 @@ main h1{
     cursor: pointer;
 }
 
-.toggle.active::before{
+.before.active{
     box-shadow: -1px -1px 1px rgb(255, 255, 255);
     background-color: rgb(216, 142, 142);
     transform: rotate(180deg);

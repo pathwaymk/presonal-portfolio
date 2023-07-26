@@ -23,7 +23,7 @@ export default ({isLight, displayNav}) => {
             link : "https://www.instagram.com/__manoj.mk__/?hl=en"
         }
     ]
-    const socialIcons = socialImg.map(image => <a href={image.link}><img src={image.icon} alt="" className={!isLight && "svgBlack"}/></a>)
+    const socialIcons = socialImg.map(image => <a href={image.link}><img src={image.icon} alt="" className={!isLight ? "svgBlack" : ""}/></a>)
 
     const content = data.map((value) => <p>{value}</p>)
     const Name = ({name}) => <h1>{name}</h1>
