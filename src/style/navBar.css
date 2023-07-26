@@ -5,12 +5,13 @@ nav{
     height: 100vh;
     z-index: 2;
     background-color: white;
+    color: black;
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all 1s ease;
+    transition: all 0.5s;
     justify-content: space-evenly;
     font-family: "Quicksand", "sans-serif";
     font-weight: 600;
@@ -34,7 +35,7 @@ nav div{
     position: relative;
     visibility : visible;
     top: 0;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .context{
@@ -104,7 +105,7 @@ nav h1{
     nav{
         visibility: hidden;
         width: 100vw;
-        transition: all 1s ease;
+        transition: all 0.5s ease;
         top: -100rem;
     }
 }
