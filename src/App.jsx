@@ -14,7 +14,7 @@ function App() {
   const [size, setSize] = useState(window.innerWidth)
   const [mode, setLight] = useState(true)
   const [isVisible, setVisible] = useState(size < 956)
-  const [displayNav, setDisplay] = useState(size < 956)
+  const [displayNav, setDisplay] = useState(false)
 
   useEffect(() => {
     const body = document.querySelector("body")

@@ -20,6 +20,14 @@ background-color: white;
   filter: invert(93%) sepia(17%) saturate(170%) hue-rotate(179deg) brightness(95%) contrast(95%);
 }
 
+a p{
+  color: inherit;
+}
+
+a:visited p{
+  color: inherit;
+}
+
 img{
   transition: all 1s;
 }
