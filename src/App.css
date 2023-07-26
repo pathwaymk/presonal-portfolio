@@ -1,42 +1,106 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html{
+  scroll-behavior: smooth;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body{
+margin: 0;
+padding: 0;
+font-family: "Quicksand", "sans-serif";
+overflow-x: hidden;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.black{
+  background-color: #121212;
+  color: #DDE6ED;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.svgBlack{
+  filter: invert(93%) sepia(17%) saturate(170%) hue-rotate(179deg) brightness(95%) contrast(95%);
 }
 
-.card {
-  padding: 2em;
+img{
+  transition: all 1s;
 }
 
-.read-the-docs {
-  color: #888;
+.eduDetails.black{
+  background-color: rgb(68, 67, 67);
+}
+
+nav.black{
+  background-color: #121212;
+  color: #DDE6ED;
+}
+/* body div{
+  background-color: blue;
+} */
+h2{
+    opacity: 0.7;
+    font-weight : lighter;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 0rem;
+}
+
+.bold{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.shadow{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 0px #ccc;
+  padding: 0.8rem 0.5rem;
+}
+
+.shadow.sback{
+   box-shadow: 0px 0px 20px 0px #333;
+}
+
+
+#handBurger{
+  position: absolute;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+}
+
+#handBurger div{
+  width: 2rem;
+  height: 0.4rem;
+  margin-bottom: 2.5px;
+  border-radius: 1rem;
+  transition: all 1s;
+}
+
+#handBurger div:nth-of-type(2){
+  transition: visiblity 0s;
+}
+
+.hBlack{
+  background-color: rgb(71, 71, 71);
+}
+
+.hWhite{
+  background-color: rgb(255, 255, 255);
+}
+
+.clicked div{
+  position: relative;
+}
+
+.clicked div:nth-of-type(1){
+  transform: rotate(45deg);
+  top: 0.6rem;
+}
+
+.clicked div:nth-of-type(3){
+  transform: rotate(-45deg);
+  bottom: 0.5rem;
+}
+
+.clicked div:nth-of-type(2){
+  visibility: hidden;
 }
